@@ -1,0 +1,70 @@
+.supporters-wrapper{
+    color: rgb(196 196 196/1);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 290px;
+    background-color: black;
+}
+.supporters-wrapper h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+.supporters-wrapper h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+.sup-tag{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.orange{
+    color: black;
+    font-weight: 500;
+    background-color: #ff6340;
+}
+.supporters-grid{
+    margin-top: 50px;
+    column-count: 6;
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    
+}
+.supporter{
+    margin-top: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.countries{
+    padding-top: 50px !important;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-bottom: 220px;
+    background-color: black;
+    
+}
+.countries-grid{
+    font-size: 12px;
+    column-count: 6;
+    margin-top: 50px;
+    
+}
+.cname{
+    font-weight: 700;
+    color: white;
+    
+}
+@media (max-width:1024px){
+  .supporters-grid{
+    
+    column-count: 4;
+   
+}
+.countries-grid{
+    
+    column-count: 4;
+   
+}
+}

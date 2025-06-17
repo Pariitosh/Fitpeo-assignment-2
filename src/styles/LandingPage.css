@@ -1,0 +1,92 @@
+.sec-1-right{
+    color: rgb(196 196 196/1);
+    width: 40%;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+.sec-1-left h1{
+    color: #e7e7e7;
+    font-size: 224px;
+    font-family: 'druk';
+    line-height: 180px;
+    
+    
+  
+}
+.text-orange{
+    color: #ff6340 !important;
+}
+
+.sec-1{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.in-view .sec-1-right{
+    animation: Anim 1s forwards;
+    
+}
+
+.in-view .sec-2-left{
+    animation: Anim 1s forwards;
+    
+}
+.sec-1-left .top-heading {
+    display: block;
+    opacity: 1;
+   
+}
+
+/* Modify existing h1s to start hidden */
+.in-view .sec-1-left h1:not(.top-heading) {
+    clip-path: inset(100% 0 0 0);
+    animation: revealUp 800ms ease-out forwards;
+    animation-delay: 1.5s; /* Start after top heading hides */
+}
+.in-view .sec-1-left h1:not(.top-heading):nth-of-type(2) {
+  animation-delay: 1.5s;
+}
+
+.in-view .sec-1-left h1:not(.top-heading):nth-of-type(3) {
+  animation-delay: 1.7s;
+}
+
+.in-view .sec-1-left h1:not(.top-heading):nth-of-type(4) {
+  animation-delay: 1.9s;
+}
+/* Animation for the top heading */
+
+@media (max-width:1278px){
+  .sec-1-left h1{
+    font-size: 160px;
+    line-height: 80%;
+  }
+}
+
+@media (max-width:1024px){
+  .sec-1 {
+    flex-direction: column;
+  }
+}
+@media (max-width:768px){
+    .sec-1-left h1{
+        font-size: 96px;
+    }
+  .sec-1-right {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@keyframes revealUp {
+    0% { clip-path: inset(100% 0 0 0); }
+    100% { clip-path: inset(0% 0 0 0); }
+}

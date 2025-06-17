@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #ff6340;
+  font-family: 'Inter', sans-serif;
+}
+@font-face {
+  font-family: 'druk';
+  src: url('./fonts/druk-font.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.in-view .sec-2-right{
+    animation: Anim 2s forwards;
+    
+}
+
+.in-view .sec-2-left{
+    animation: Anim 2s forwards;
+    
+}
+
+
+@keyframes Anim {
+    from {
+      opacity: 0;
+        transform: translateY(150px)
+    }
+    to {
+      opacity: 1;
+        transform: translateY(0px)
+    }
+}
