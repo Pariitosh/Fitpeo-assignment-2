@@ -68,3 +68,15 @@
    
 }
 }
+@media (max-width:768px){
+  .supporters-grid{
+    
+    column-count: 3;
+   
+}
+.countries-grid{
+    
+    column-count: 3;
+   
+}
+}
